@@ -1,0 +1,11 @@
+
+config CUSTOM_KERNEL_CAPTOUCH
+	bool "CUSTOM_KERNEL_CAPTOUCH"
+	help
+	  ALSPS sensor driver to detect ambient light and the object is close
+	  or far awary from device. After configure this configuration,
+          the specific ambient light and proximity sensor driver configuration
+          should be configured as well.
+
+source "drivers/misc/mediatek/captouch/iqs128/Kconfig"
+source "drivers/misc/mediatek/captouch/iqs263/Kconfig"
